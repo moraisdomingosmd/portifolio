@@ -1,0 +1,319 @@
+:root {
+    --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    --dark-blue: #1A1A1A;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #000080;
+    --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    --navy-shadow: rgba(2, 12, 27, 0.7);
+}
+
+body {
+    margin: 0px;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--navy);
+    color: var(--slate);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+a {
+    color: var(--lightest-slate);
+}
+
+.ff-mono {
+    font-family: var(--font-mono);
+}
+
+.bg-default {
+    background: var(--dark-blue);
+}
+
+.backdrop {
+    backdrop-filter: blur(10px);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.logo {
+    border-radius: 100%;
+    border: 3px solid var(--green);
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 4px var(--green);
+}
+
+.presentation-board {
+    animation-delay: 3s;
+    animation-name: anim-presentation-board;
+    animation-duration: .5s;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    z-index: 2000;
+}
+
+/* Presentation Start */
+.first-name {
+    animation-name: anim-first-name;
+    animation-duration: 2s;
+    animation-play-state: running;
+}
+
+.last-name {
+    animation-delay: 1s;
+    animation-name: anim-last-name;
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-fill-mode: both;
+}
+
+.presentation-line {
+    background: linear-gradient(to right, var(--green), white);
+    height: 1px;
+    animation-name: anim-presentation-line;
+    animation-play-state: running;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    opacity: 0.5;
+}
+
+/* Presentaion End */
+
+.text-green {
+    color: var(--green);
+}
+
+.hover-link:hover {
+    text-shadow: 0 0 10px var(--green);
+    color: var(--green);
+}
+
+.nav-link {
+    color: #CCD6F6;
+    font-family: var(--font-mono);
+    font-size: 13px;
+}
+
+
+.link-button {
+    border: 1px solid var(--green);
+    color: var(--green);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--font-mono);
+    transition: all .5s;
+    font-size: 14px;
+}
+
+.link-button:hover {
+    color: var(--dark-blue);
+    background-color: var(--green);
+}
+
+.fader-container {
+    position: relative;
+}
+
+.fader-container .fader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #59e3c596;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.fader-container:hover .fader {
+    opacity: 0;
+
+}
+
+#home {
+    min-height: 100vh;
+}
+
+.heading {
+    margin: 0px 0px 10px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.big-heading {
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 80px);
+    color: var(--lightest-slate)
+}
+
+.numbered-heading {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: clamp(22px, 5vw, 28px);
+    white-space: nowrap;
+    color: var(--lightest-slate)
+}
+
+.numbered-heading::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #233554;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.list-networks li a {
+    color: inherit;
+    transition: all .5s;
+}
+
+.list-networks li:hover {
+    transform: translateY(-3px);
+    transition: all .5s;
+}
+
+.list-networks::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #CCD6F6;
+    box-shadow: 0px 0px 1px #CCD6F6;
+}
+
+ul.skills {
+    padding: 0;
+}
+
+ul.skills li {
+    font-size: 13px;
+    font-family: var(--font-mono);
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul.skills li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: var(--green);
+    font-size: 14px;
+    line-height: 12px;
+}
+
+.navbar {
+    background-color: #0a192fbb;
+}
+
+.img-back-border {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--green);
+    z-index: -1;
+}
+
+.project-overline {
+    margin: 10px 0px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.project-title {
+    margin: 0px 0px 14px;
+    color: #ccd6f6;
+    font-size: clamp(20px, 5vw, 24px);
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.project .fader-container {
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.project .project-content {
+    background: rgba(12, 32, 52, 0.8);
+    padding: 30px 25px;
+    box-shadow: 0px 0px 40px var(--navy-shadow);
+}
+
+.project-content .project-description {
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+
+    .project .fader-container {
+        z-index: 1;
+        max-width: 50%;
+        opacity: 1;
+        height: fit-content;
+    }
+
+    .project .project-content {
+        background: transparent;
+        box-shadow: none;
+        width: 60%;
+    }
+
+    .project-content .project-description {
+        position: relative;
+        box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        z-index: 2;
+        padding: 20px;
+        border-radius: 4px;
+        background-color: #112240;
+        color: #a8b2d1;
+    }
+}
+
+.project-tech-list {
+    margin: 25px 0px 10px;
+    padding: 0;
+}
+
+.project-tech-list li {
+    display: inline-block;
+    margin-right: 6px;
+    color: #a8b2d1;
+    font-size: 13px;
+}
+
+.row-project {
+    margin-bottom: 100px;
+}

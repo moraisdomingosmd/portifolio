@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morais Domingos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./animation/animations.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body class="bg-default">
+
+    <!-- Offcanvas -->
+    <div class="offcanvas d-md-none offcanvas-end bg-default" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <div></div>
+            <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item mb-3">
+                    <a class="nav-link hover-link fs-4" href="#home">Inicio</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a class="nav-link hover-link fs-4" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a class="nav-link hover-link fs-4" href="#projects">Projetos</a>
+                </li>
+                <li class="nav-item mb-4">
+                    <a class="nav-link hover-link fs-4" href="#contact">Contatos</a>
+                </li>
+                <li class="nav-item mb-5">
+                    <a class="link-button" href="./files/curriculoMD.pdf">currículo</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- Social Networks Links -->
+    <section class="position-fixed bottom-0 d-none d-md-block">
+        <ul class="list-networks">
+            <li class="pb-3"><a class="hover-link" target="_blank" href="https://github.com/moraisdomingosmd"><i
+                        class="bi-github"></i></a>
+            </li>
+            <li class="pb-3"><a class="hover-link" target="_blank" href="www.linkedin.com/in/morais-domingos-a558a6298/"><i
+                        class="bi-linkedin"></i></a></li>
+            <li class="pb-3"><a class="hover-link" target="_blank" href="https://www.instagram.com/morais_domingos_md/"><i
+                        class="bi-instagram"></i></a></li>
+        </ul>
+    </section>
+
+    <!-- Email -->
+    <section class="position-fixed end-0 bottom-0 d-none d-md-block" style="padding-right: 2rem;">
+        <div class="d-flex justify-content-center align-items-center position-relative" style="flex-direction: column;">
+        </div>
+        <ul class="list-networks">
+            <li class="mb-3">
+                <a class="hover-link ff-mono" style="writing-mode: vertical-rl;font-size: 12px;"
+                    href="moraisdomingosmd@gmail.com">moraisdomingosmd@gmail.com</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top backdrop">
+        <div class="container-fluid px-3 px-md-5 py-3">
+
+            <a href="#home" class="inline-block logo d-flex justify-content-center align-items-center">
+                <div class="text-green fs-6">MD</div>
+            </a>
+
+            <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item active">
+                        <a class="nav-link hover-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item ms-md-2">
+                        <a class="nav-link hover-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item  ms-2">
+                        <a class="nav-link hover-link" href="#projects">Projetos</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link hover-link" href="#contact">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="link-button" href="./files/curriculoMD.pdf">currículo</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <main class="container px-4 px-md-5">
+        <!-- Introdução -->
+        <section id="home" style="padding-top: 140px;padding-bottom: 140px;">
+            <div class="container">
+                <div class="mb-3 ps-2"><span class="text-green fs-6 ff-mono">Oi, meu nome é</span></div>
+                <div class="heading big-heading">Morais Domingos.</div>
+                <div class="heading big-heading opacity-50">'Vamos codificar um pouco.'</div>
+                <div class="mt-5">
+                    <p class="lh-base">
+                        <h5>“Código é poesia em movimento”</h5>
+                    Este slogan é uma homenagem ao fato de que programar é uma forma de arte, 
+                    onde o código é a poesia que ganha vida através do movimento. 
+                    Programadores são artistas que criam soluções elegantes e eficientes para problemas complexos.
+                    </p>
+                    <p class="mt-5">
+                        <a class="link-button me-3" href="./files/curriculoMD.pdf">Descarregue o meu C.V</a>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- About Section-->
+        <section id="about">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-8 ps-md-5">
+                        <h2 class="numbered-heading heading">Sobrem mim </h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 ps-md-5 pe-md-5">
+                        <p>
+                        </div>
+                        Eu sempre fui fascinado pela tecnologia e como ela pode ser 
+                        usada para resolverproblemas complexos. <br> Foi essa curiosidade  
+                        que me levou a estudar programação. Eu comecei a aprender <br> 
+                        programação no ensino médio, onde tive a sorte de ter um professor <br>
+                        incrível que me apresentou ao mundo da programação. A partir daí, <br> 
+                        comecei a procurar maneiras de aprender mais sobre programação.<br> 
+                        Eu li livros, assisti a tutoriais em vídeo e participei de fóruns <br> 
+                        online para obter ajuda e orientação. Eu também comecei a trabalhar <br> 
+                        em projetos pessoais para aplicar o que aprendi e desenvolver <br> 
+                        minhas habilidades. Com o tempo, comecei a me sentir mais <br>
+                        confiante em minhas habilidades de programação e decidi seguir <br> uma carreira na área de tecnologia.
+                        </p>
+
+                        <div class="p-2">
+                            <p class="py-3"><small class="text-green">Algumas das minhas habilidades:</small></p>
+                            <div class="row">
+                                <div class="col-5 col-lg-3">
+                                    <ul class="skills position-relative">
+                                        <li>TYPESCRIPT</li>
+                                        <li>VUEJS</li>
+                                        <li>NODEJS(EXPRESS)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-5 col-lg-3">
+                                    <ul class="skills position-relative">
+                                        <li>SQLLITE</li>
+                                        <li>MONGODB</li>
+                                        <li>MySQL</li>
+                                    </ul>
+                                </div>
+                                <div class="col-5 col-lg-3">
+                                    <ul class="skills position-relative">
+                                        <li>PHP</li>
+                                        <li>Git</li>
+                                        <li>GitHub</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-5 col-lg-3">
+                                    <ul class="skills position-relative">
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 d-flex d-md-block justify-content-center align-items-center pt-4 pt-md-0">
+                        <div class="fader-container" style="max-width: 400px; max-height: 400px;">
+                            <div class="fader rounded"></div>
+                            <div class="img-back-border rounded"></div>
+                            <img src="./images/morais.jpg" class="img-fluid rounded" alt="Minha foto">
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+        <div class="my-5 py-5"> </div>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container mt-4 pt-4">
+
+                <div class="row">
+                    <div class="col-md-8 ps-md-5">
+                        <h2 class="numbered-heading heading">Projetos</h2>
+                    </div>
+                </div>
+
+                <div class="row row-project">
+                    <div class="col ps-md-5 pe-md-5">
+                        <div class="project position-relative">
+                            <div class="project-content text-md-end ms-md-auto">
+                                <p class="project-overline">Projeto</p>
+                                <h3 class="project-title">API </h3>
+                                <div class="project-description">
+                                    <p>
+                                        Api feita com nodeJs(EXPRESS) para um sistema de controle de pessoas e cidades.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>NodeJs(Express)</li>
+                                    <li>Typescript</li>
+                                    <li>Sqlite</li>
+                                </ul>
+                                <div class="project-links pe-md-2">
+                                    <a class="hover-link ff-mono" target="_blank"
+                                        href="https://github.com/moraisdomingosmd/api_node_typeSript">Repositório</bi></a>
+                                </div>
+                            </div>
+                            <div class="fader-container position-absolute top-50 start-0 translate-middle-y">
+                                <div class="fader rounded"></div>
+                                <img src="./images/api_type.png" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-project">
+                    <div class="col ps-md-5 pe-md-5">
+                        <div class="project position-relative">
+                            <div class="project-content text-md-end ms-md-auto">
+                                <p class="project-overline">Projeto</p>
+                                <h3 class="project-title">Buerger Size</h3>
+                                <div class="project-description">
+                                    <p>
+                                        É um aplicativo web feito em Vuejs 3 para uma hamburgueria fictícia para criação 
+                                        e controle de humbúrguer.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>Vuejs 3</li>
+                                    <li>Axios</li>
+                                    <li>Css 3</li>
+                                </ul>
+                                <div class="project-links pe-md-2">
+                                    <a class="hover-link ff-mono" target="_blank"
+                                        href="https://github.com/moraisdomingosmd/buerger-Size">Repositório</bi></a>
+                                </div>
+                            </div>
+                            <div class="fader-container position-absolute top-50 start-0 translate-middle-y">
+                                <div class="fader rounded"></div>
+                                <img src="./images/buerger.png" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-project">
+                    <div class="col ps-md-5 pe-md-5">
+                        <div class="project position-relative">
+                            <div class="project-content">
+                                <p class="project-overline">Projeto</p>
+                                <h3 class="project-title">Api da buergerSize</h3>
+                                <div class="project-description">
+                                    <p>
+                                        Api feita com nodeJs(EXPRESS) para o sistema da hamburgueria.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>NodeJs(Expres)</li>
+                                    <li>MongoDb</li>
+                                </ul>
+                                <div class="project-links pe-md-2">
+                                    <a class="hover-link ff-mono" href="https://github.com/moraisdomingosmd/api_buergerSiz">
+                                        Repositório
+                                        </bi></a>
+                                </div>
+                            </div>
+                            <div class="fader-container position-absolute top-50 end-0 translate-middle-y">
+                                <div class="fader rounded"></div>
+                                <img src="./images/node.png" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-project">
+                    <div class="col ps-md-5 pe-md-5">
+                        <div class="project position-relative">
+                            <div class="project-content text-md-end ms-md-auto">
+                                <p class="project-overline">Projeto</p>
+                                <h3 class="project-title">News Mangas</h3>
+                                <div class="project-description">
+                                    <p>
+                                        Modelo de site para ler mangas online.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>HTML 5</li>
+                                    <li>CSS 3</li>
+                                    <li>Javascript</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                                <div class="project-links pe-md-2">
+                                    <a class="hover-link ff-mono me-3" target="_blank"
+                                        href="https://newmangas.netlify.app/">Visualizar</bi></a>
+                                    <a class="hover-link ff-mono" target="_blank"
+                                        href="https://github.com/moraisdomingosmd/new-mangas">Repositório</bi></a>
+                                </div>
+                            </div>
+                            <div class="fader-container position-absolute top-50 start-0 translate-middle-y">
+                                <div class="fader rounded"></div>
+                                <img src="./images/newmanga.png" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-project">
+                    <div class="col ps-md-5 pe-md-5">
+                        <div class="project position-relative">
+                            <div class="project-content">
+                                <p class="project-overline">Projeto</p>
+                                <h3 class="project-title">Anotador de tarefas</h3>
+                                <div class="project-description">
+                                    <p>
+                                       Um anotador de tarefas básico para não esquecer dos afazeres.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>Html 5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <div class="project-links pe-md-2">
+                                    <a class="hover-link ff-mono me-3" target="_blank"
+                                        href="https://saved-tasks.netlify.app/">Visualizar</bi></a>
+                                    <a class="hover-link ff-mono" target="_blank"
+                                        href="https://github.com/moraisdomingosmd/saved-tasks">Repositório</bi></a>
+                                </div>
+                            </div>
+                            <div class="fader-container position-absolute top-50 end-0 translate-middle-y">
+                                <div class="fader rounded"></div>
+                                <img src="./images/task.png" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-project">
+                    <div class="col ps-md-5 pe-md-5">
+                        <div class="project position-relative">
+                            <div class="project-content">
+                                <p class="project-overline">Projeto</p>
+                                <h3 class="project-title">Basic Api</h3>
+                                <div class="project-description">
+                                    <p>
+                                        Uma api simples para cadastro de usuários feita com Php.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>Php</li>
+                                    <li>Composer</li>
+                                    <li>PDO</li>
+                                </ul>
+                                <div class="project-links pe-md-2">
+                                    <a class="hover-link ff-mono" target="_blank"
+                                        href="https://github.com/moraisdomingosmd/basic_api_php">Repositório</bi></a>
+                                </div>
+                            </div>
+                            <div class="fader-container position-absolute top-50 end-0 translate-middle-y">
+                                <div class="fader rounded"></div>
+                                <img src="./images/api.png" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-project">
+                    <div class="col ps-md-5 pe-md-5">
+                        <div class="project position-relative">
+                            <div class="project-content">
+                                <p class="project-overline">Projeto</p>
+                                <h3 class="project-title">React Hooks</h3>
+                                <div class="project-description">
+                                    <p>
+                                        Site de leitura de posts feito com React e consumindo uma Api.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>React</li>
+                                    <li>Eslint</li>
+                                    <li>Prettier</li>
+                                </ul>
+                                <div class="project-links pe-md-2">
+                                    <a class="hover-link ff-mono me-3" target="_blank"
+                                        href="https://react-hooksmd.netlify.app/">Visualizar</bi></a>
+                                    <a class="hover-link ff-mono" target="_blank"
+                                        href="https://github.com/moraisdomingosmd/project_react">Repositório</bi></a>
+                                </div>
+                            </div>
+                            <div class="fader-container position-absolute top-50 end-0 translate-middle-y">
+                                <div class="fader rounded"></div>
+                                <img src="./images/react.png" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <div class="my-5 py-5"> </div>
+
+        <section id="contact">
+            <div class="container text-center">
+                <p>
+                    <a class="link-button p-3" href="www.linkedin.com/in/morais-domingos-a558a6298/">Diga olá!!</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section-->
+    <footer style="padding-top: 200px;">
+        <div class="text-center d-md-none pb-4">
+            <a class="hover-link pe-3" href="https://github.com/moraisdomingosm"><i class="bi-github fs-5"></i></a>
+            <a class="hover-link pe-3" href="https://www.linkedin.com/in/morais-domingos-abb653262/"><i class="bi-linkedin fs-5"></i></a>
+            <a class="hover-link" href="https://www.instagram.com/morais_domingos_md/"><i class="bi-instagram fs-5"></i></a>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Presentation -->
+    <section
+        class="presentation-board bg-default position-fixed top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+        <div>
+            <div class="first-name me-3 d-inline-block text-green"><span class="display-4">Morais</span></div>
+            <div class="last-name d-inline-block"><span class="text-white display-4">Domingos</span></div>
+            <div class="presentation-line mt-2"></div>
+            <div class="text-center p-3"><span class="display-6 text-muted">Bem Vindo!</span></div>
+        </div>
+
+    </section>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
